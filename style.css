@@ -94,13 +94,13 @@ main {
 
 }
 .pic-part img{
-    width: 400px;
-    height: 90%;
+    width: 450px;
+    height: 80%;
 }
 .box{
     padding: 20px;
     margin-bottom: 10px;
-    height: 100px;
+    height: 80px;
     width: 90%;
     border-radius: 8px;
     background: #FFF;
@@ -202,7 +202,7 @@ footer .all-p{
     grid-template-columns: 1fr;   
 }
 .box{
-    height: 150px;
+    height: 120px;
 }
 .pic-part img{
     width: 100%;
