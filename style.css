@@ -1,0 +1,218 @@
+/* Share style  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+}
+.btn{
+    border: 0;
+    background-color: tomato;
+    border-radius: 7px;
+    padding: 15px 30px;
+    margin-top: 5px;
+}
+.all-p{
+    color: var(--dark-03, #727272);
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 5px;   
+}
+/* header section  */
+header{
+    background-color: rgb(251, 240, 226);
+    padding: 20px 150px;
+}
+menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+menu ul{
+    display: flex;
+    justify-content: space-around;
+}
+menu ul li{
+    list-style: none;
+    margin-right: 20px;
+}
+.banner{
+    text-align: center;
+    margin-top: 50px;
+}
+.banner img{
+    width: 100%;
+    margin-top: 20px;
+}
+.banner h2{
+    color: var(--dark-01, #131313);
+    font-size: 64px;
+    font-weight: 700;
+}
+/* main part  */
+main {
+    max-width: 70%;
+    margin: 70px auto;
+}
+
+/* section1 */
+.discuss-text{
+    text-align: center;
+}
+.section1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+.discuss-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.discuss-img img{
+    width: 200px;
+    height: 200px;
+}
+.uniq{
+    color: var(--dark-03, #727272);
+    font-weight: 400;
+}
+.fr{
+    color: rgb(255, 145, 125);
+}
+/* section2 */
+.section2{
+    display: flex;
+    justify-content: space-around;
+    gap: 60px;
+    margin-top: 20px;
+
+}
+.pic-part img{
+    width: 400px;
+    height: 90%;
+}
+.box{
+    padding: 20px;
+    margin-bottom: 10px;
+    height: 100px;
+    width: 90%;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px
+}
+.box p{
+    font-size: 10px;
+    margin-top: 10px;
+}
+.bp{
+    margin-bottom: 10px;
+    width: 80%;
+    padding: 10px;
+}
+.box-pat h2{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.check-in{
+    width: 150px;
+    height: 130px;
+    border-radius: 5px;
+    background: #FF900E;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 80px;
+    right: 30px;
+}
+/* section3 */
+.section3{
+    margin-top: 80px;
+}
+.sec3-text h3{
+    font-style: italic;
+    font-size: 30px;
+}
+.cp{
+    text-align: left;
+}
+.iconbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.icon{
+    border: 2px  solid rgb(239, 206, 200);
+    border-radius: 7px;
+    padding: 20px;
+}
+/* footer */
+footer h3{
+    text-align: center;
+}
+footer .all-p{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.foot{
+    text-align: center;
+    
+}
+.foot img{
+    margin-left: 15px;
+}
+.foot2{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    color:var(--dark-03, #727272);
+    font-size: 15px;
+    background-color: #FFF4E7;
+    margin-top: 30px;
+    border-radius: 7px;
+    margin-bottom: 40px;
+}
+/* media query section  */
+
+@media screen and (max-width:576px) {
+    menu, .section1, .section2, .iconbox, .foot{
+        flex-direction: column;
+        gap: 50px;
+        padding: 10px 30px;
+    }
+    header{
+        background-color: rgb(251, 240, 226);
+        padding: 10px;
+}
+.discuss-img{
+    display: grid;
+    grid-template-columns: 1fr;   
+}
+.box{
+    height: 150px;
+}
+.pic-part img{
+    width: 100%;
+    height: 90%;
+}
+}
+@media screen and (min-width:576px) and (max-width:950px) {
+    menu, .section1, .section2{
+        flex-direction: column;
+        gap: 50px;
+        padding: 10px 30px;
+    }
+}
